@@ -6,7 +6,7 @@
 
 
 
-### 创建版本库(repository)
+### 1. 创建版本库(repository)
 
 all my repository will be saved in `/Users/apple/localRepository`
 
@@ -27,7 +27,7 @@ git commit -m "git learning notes"
 
 
 
-### 版本控制
+### 2. 版本控制
 
 #### 修改提交
 
@@ -123,7 +123,7 @@ git checkout -- xxx.md
 
 
 
-### 远程仓库
+### 3. 远程仓库
 
 ```shell
 //在github上创建新仓库
@@ -132,5 +132,49 @@ git remote add origin git@server-name:path/repo-name.git // origin是远程仓�
 
 //将当前分支master推送到远程。
 git push -u origin master //第一次加 -u，以后不用。
+```
+
+
+
+### 4. 分支管理
+
+Reference   [git flow](https://www.cnblogs.com/wish123/p/9785101.html)
+
+- Master
+- - 发布release。
+  - 只能从其他分支合并，不能直接对其修改。
+
+- Develop
+- - 主开发分支，包含所有要发布到下一个release的代码。
+  - 主要是合并其他分支，比如Feature。
+- Feature
+- - 主要用来开发新功能，一旦开发完成，合并到Develop分支，进入下一个Release。
+- Release
+- - 当需要一个发布一个新Release时，基于Develop分支创建一个Release分支
+  - 完成Release后，我们合并到Master和Develop分支
+- Hotfix(bug)
+- - 主要用来修复master上的bug，修好后，合并回master和dev分支。
+
+
+
+```shell
+//只考虑Develop和Feature怎么用
+
+//查看分支
+git branch
+*master  // * 表示当前分支
+dev
+fea
+//创建分支
+git branch <name> 
+//切换分支
+git switch <name> / git checkout <name> 
+// 创建加切换分支
+git switch -C <name> / git checkout -b <name>
+
+// 合并某分支到当前分支
+git merge <name>
+// 删除分支
+git branch -d <name>
 ```
 
