@@ -91,9 +91,9 @@ git add 就是把所有要提交的文件提交到stage， git commit一次性�
 
 一旦提交，工作区没有新的修改，就是clean的。
 
-![Screen Shot 2019-12-23 at 1.09.30 PM](/Users/apple/Desktop/Screen Shot 2019-12-23 at 1.09.30 PM.png)
+<img src='./images/1.png'>
 
-![Screen Shot 2019-12-23 at 1.19.09 PM](/Users/apple/Desktop/Screen Shot 2019-12-23 at 1.19.09 PM.png)
+<img src='./images/2.png'>
 
 ```shell
 //当你打乱了工作区，想直接丢弃工作区修改时候
