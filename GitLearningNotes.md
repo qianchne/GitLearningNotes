@@ -81,3 +81,19 @@ git reset --hard <版本号前几位> // 回到指定版本，可以回到未来
 git reflog //获取每一个版本的版本号，以便于上一条指令回到未来版本。
 ```
 
+#### 工作区和暂存区
+
+learngit文件夹就是一个工作区，隐藏文件夹.git 就是版本库。
+
+版本库中最重要的是stage（暂存区），里面有第一个分支master和指向master的指针HEAD。
+
+git add 就是把所有要提交的文件提交到stage， git commit一次性提交到tree上。
+
+一旦提交，工作区没有新的修改，就是clean的。
+
+![Screen Shot 2019-12-23 at 1.09.30 PM](/Users/apple/Desktop/Screen Shot 2019-12-23 at 1.09.30 PM.png)
+
+![Screen Shot 2019-12-23 at 1.19.09 PM](/Users/apple/Desktop/Screen Shot 2019-12-23 at 1.19.09 PM.png)
+
+#### 管理修改
+
