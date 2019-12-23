@@ -74,8 +74,10 @@ git log --pretty=oneline //简洁的查看版本信息
 ee4ddb99b54ffb8c4b86162ab24c7a2efeffedd7 (HEAD -> master) add version control notes
 875d17685d876e5651968cf4108ecab228232a59 git learning notes
 
+// HEAD表示当前版本，HEAD^表示上一个版本、
+
+git reset --hard HEAD^ //回到上一个版本
+git reset --hard <版本号前几位> // 回到指定版本，可以回到未来版本。
+git reflog //获取每一个版本的版本号，以便于上一条指令回到未来版本。
 ```
 
-
-
-测试
