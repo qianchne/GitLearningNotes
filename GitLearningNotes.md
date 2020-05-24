@@ -129,6 +129,7 @@ git checkout -- xxx.md
 //在github上创建新仓库
 //关联当前本地仓库和新仓库
 git remote add origin git@server-name:path/repo-name.git // origin是远程仓库名。
+//example:  git remote add origin git@github.com:qianchne/repo-name.git
 
 //将当前分支master推送到远程。
 git push -u origin master //第一次加 -u，以后不用。
