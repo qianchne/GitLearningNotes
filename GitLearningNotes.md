@@ -127,6 +127,10 @@ git checkout -- xxx.md
 
 ```shell
 //在github上创建新仓库
+
+// 先在本地新建仓库，并进入到新建目录
+git init
+
 //关联当前本地仓库和新仓库
 git remote add origin git@server-name:path/repo-name.git // origin是远程仓库名。
 //example:  git remote add origin git@github.com:qianchne/repo-name.git
